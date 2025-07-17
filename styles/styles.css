@@ -12,13 +12,15 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* common shared styles */
 header,main{
-    margin-left: 140px;
-    margin-right: 140px;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 .text-center{
 text-align: center;
 }
+/* header related styles */
 .header{
     background-image: linear-gradient(180.00deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),url('../images/Banner\ Image.png');
     background-repeat: no-repeat;
@@ -27,6 +29,7 @@ text-align: center;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
 }
 .header-greeting{
 color: white;
@@ -70,7 +73,8 @@ font-size: 32px;
 }
 .second-section{
     display: flex;
-    background-image: url('../images/Vectorrr.png');
+    background-image:linear-gradient(90.00deg, rgb(7, 2, 17),rgba(7, 2, 17, 0) 100%), url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
     height: 600px;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -78,6 +82,11 @@ font-size: 32px;
     align-items: center;
     gap: 24px;
     border-radius: 20px;
+    
+}
+.second-section img{
+    width: 315px;
+    height: 465px;
 }
 .second-section-content{
     width: 600px;
@@ -100,7 +109,7 @@ font-size: 32px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:linear-gradient(180.00deg,rgb(249, 123, 123),rgba(255, 0, 0, 0)100%);
+    background:linear-gradient(180.00deg, rgba(255, 0, 0, 0.1),rgba(255, 0, 0, 0) 100%);
     height: 480px;
     border-radius: 16px;
 }
@@ -208,6 +217,9 @@ font-size: 32px;
 }
 .sixth-section-images{
 margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
 
 }
 .sixth-section-images img{
